@@ -3,11 +3,10 @@
 require('./helper')
 var fs   = require('fs').promise
 
-var index = 0;
-
 function* cat() {
-    let data = yield fs.promise.readFile(process.argv[2], 'utf8')
-    process.stdout.write(data)
+    console.log(process.argv[2] +'\n');
+    let data = yield fs.readFile(process.argv[2], 'utf8')
+    process.stdout.write(data +'\n')
 }
 
 module.exports = cat

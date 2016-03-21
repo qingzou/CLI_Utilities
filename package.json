@@ -1,5 +1,13 @@
 {
   "name": "clis",
+  "bin": {
+     "cli-echo": "./echo.js",
+     "cli-cat": "./cat.js",
+     "cli-ls": "./ls.js",
+     "cli-mkdir": "./mkdir.js",
+     "cli-rm": "./rm.js",
+     "cli-touch": "./touch.js"
+  },
   "version": "1.0.0",
   "description": "A collection of CLI utilities",
   "main": "index.js",
